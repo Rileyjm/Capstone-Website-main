@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - DogDecode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shared.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🐾 DogDecode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="docs.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="docs-hero">
+        <div class="container">
+            <p class="docs-hero-eyebrow">📖 User Guide</p>
+            <h1>How to Use DogDecode</h1>
+            <p>Everything you need to know about searching genomic data, reading results, and getting the most out of the platform.</p>
+            <div class="docs-meta">
+                <span class="docs-meta-item">🕒 5 min read</span>
+                <span class="docs-meta-item">📄 7 sections</span>
+                <span class="docs-meta-item">✅ Updated April 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main layout -->
+    <div class="docs-layout">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Sidebar TOC (desktop) -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <nav class="docs-toc">
+                        <p class="toc-heading">On this page</p>
+
+                        <a class="toc-link" href="#overview"><span class="toc-link-icon">🐾</span> Overview</a>
+                        <a class="toc-link" href="#getting-started"><span class="toc-link-icon">🚀</span> Getting Started</a>
+                        <a class="toc-link" href="#search-types"><span class="toc-link-icon">🔎</span> Search Types</a>
+                        <div class="toc-sub">
+                            <a class="toc-link" href="#snp">SNP Search</a>
+                            <a class="toc-link" href="#gene">Gene Search</a>
+                            <a class="toc-link" href="#breed">Breed Search</a>
+                            <a class="toc-link" href="#disease">Disease Search</a>
+                        </div>
+                        <a class="toc-link" href="#results"><span class="toc-link-icon">📊</span> Reading Results</a>
+                        <a class="toc-link" href="#profile"><span class="toc-link-icon">🐶</span> Your Profile</a>
+                        <a class="toc-link" href="#history"><span class="toc-link-icon">🕒</span> Search History</a>
+                        <a class="toc-link" href="#tips"><span class="toc-link-icon">💡</span> Tips & Tricks</a>
+                    </nav>
+                </div>
+
+                <!-- Main content -->
+                <div class="col-lg-9">
+
+                    <!-- Overview -->
+                    <div class="doc-section" id="overview">
+                        <p class="section-eyebrow">Overview</p>
+                        <h2>What is DogDecode?</h2>
+                        <p>DogDecode is a centralized canine genomics platform built for researchers, veterinarians, students, and dog enthusiasts. It provides a searchable database of SNPs (single nucleotide polymorphisms), genes, dog breeds, and disease associations drawn from published research and curated genomic databases.</p>
+                        <p>The platform lets you explore how specific genetic variants affect coat color, body weight, disease risk, and hundreds of other traits across more than 180 dog breeds.</p>
+
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-card-icon">🔍</div>
+                                <p class="result-card-title">12,400+ SNP Records</p>
+                                <p class="result-card-desc">Catalogued single nucleotide polymorphisms with allele frequencies and phenotype links.</p>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-card-icon">🧬</div>
+                                <p class="result-card-title">340+ Genes</p>
+                                <p class="result-card-desc">Gene detail pages with location, function, associated variants, and related genes.</p>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-card-icon">🐶</div>
+                                <p class="result-card-title">180+ Breeds</p>
+                                <p class="result-card-desc">Breed-specific variant frequencies, trait markers, and ancestral background data.</p>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-card-icon">❤️‍🩹</div>
+                                <p class="result-card-title">90+ Disease Associations</p>
+                                <p class="result-card-desc">Risk factor markers for hereditary conditions with literature citations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Getting Started -->
+                    <div class="doc-section" id="getting-started">
+                        <p class="section-eyebrow">Getting Started</p>
+                        <h2>Your First Search</h2>
+                        <p>Running a search takes three steps. You can query one data type or combine several in a single search.</p>
+
+                        <ul class="steps">
+                            <li class="step">
+                                <div class="step-num">1</div>
+                                <div class="step-body">
+                                    <p class="step-title">Go to the Home page</p>
+                                    <p class="step-desc">The search panel is at the center of the home page under "Explore Genomic Data." You'll see four search types listed: SNP, Gene, Breed, and Disease.</p>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-num">2</div>
+                                <div class="step-body">
+                                    <p class="step-title">Check one or more search types</p>
+                                    <p class="step-desc">Click the checkbox next to any type you want to search. A text input will appear beneath it. You must fill in every box you check before searching.</p>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-num">3</div>
+                                <div class="step-body">
+                                    <p class="step-title">Enter your query and hit Search</p>
+                                    <p class="step-desc">Type your search term in the input field and click the blue "Search" button. Results open immediately. Your search is also saved to your profile history automatically.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="callout callout-tip">
+                            <span class="callout-icon">✅</span>
+                            <div class="callout-body">
+                                <p class="callout-title">Combine searches</p>
+                                <p class="callout-text">You can check multiple types at once — for example, search for a Gene and a Breed simultaneously. Results for all checked types appear on the combined results page.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search Types -->
+                    <div class="doc-section" id="search-types">
+                        <p class="section-eyebrow">Search Types</p>
+                        <h2>What You Can Search</h2>
+                        <p>DogDecode supports four distinct data types. Each produces its own detailed results page.</p>
+
+                        <div id="snp">
+                            <h3>🔍 SNP Search</h3>
+                            <div class="search-type-card">
+                                <div class="search-type-icon icon-snp">🔍</div>
+                                <div class="search-type-body">
+                                    <p class="search-type-title">Single Nucleotide Polymorphisms</p>
+                                    <p class="search-type-desc">Look up a specific SNP by its reference ID. Results show the chromosomal position, allele frequencies, mutation type, and any phenotype associations recorded in the database.</p>
+                                    <p class="example-label">Example inputs</p>
+                                    <div class="example-chips">
+                                        <span class="chip">rs22232384</span>
+                                        <span class="chip">rs89456123</span>
+                                        <span class="chip">rs45678234</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="gene">
+                            <h3>🧬 Gene Search</h3>
+                            <div class="search-type-card">
+                                <div class="search-type-icon icon-gene">🧬</div>
+                                <div class="search-type-body">
+                                    <p class="search-type-title">Genes & Genomic Regions</p>
+                                    <p class="search-type-desc">Search by official gene symbol. Results include the gene's full name, chromosomal location, function, associated SNPs, breed-specific variant frequencies, and links to NCBI.</p>
+                                    <p class="example-label">Example inputs</p>
+                                    <div class="example-chips">
+                                        <span class="chip">MC1R</span>
+                                        <span class="chip">ASIP</span>
+                                        <span class="chip">FGF5</span>
+                                        <span class="chip">POMC</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="breed">
+                            <h3>🐶 Breed Search</h3>
+                            <div class="search-type-card">
+                                <div class="search-type-icon icon-breed">🐶</div>
+                                <div class="search-type-body">
+                                    <p class="search-type-title">Dog Breeds & Genetic Markers</p>
+                                    <p class="search-type-desc">Enter a breed name to view its characteristic genetic markers, common trait variants, health predispositions, and how its genome compares to related breeds.</p>
+                                    <p class="example-label">Example inputs</p>
+                                    <div class="example-chips">
+                                        <span class="chip">Labrador Retriever</span>
+                                        <span class="chip">Golden Retriever</span>
+                                        <span class="chip">Australian Shepherd</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="disease">
+                            <h3>❤️‍🩹 Disease Search</h3>
+                            <div class="search-type-card">
+                                <div class="search-type-icon icon-disease">❤️‍🩹</div>
+                                <div class="search-type-body">
+                                    <p class="search-type-title">Disease Associations & Risk Factors</p>
+                                    <p class="search-type-desc">Search hereditary conditions to find the genetic markers associated with increased risk, carrier status, or clear status. Includes affected breeds and supporting literature.</p>
+                                    <p class="example-label">Example inputs</p>
+                                    <div class="example-chips">
+                                        <span class="chip">Hip Dysplasia</span>
+                                        <span class="chip">Progressive Retinal Atrophy</span>
+                                        <span class="chip">Von Willebrand Disease</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-info">
+                            <span class="callout-icon">ℹ️</span>
+                            <div class="callout-body">
+                                <p class="callout-title">Case sensitivity</p>
+                                <p class="callout-text">Searches are not case-sensitive. "mc1r", "MC1R", and "Mc1r" all return the same results. Gene symbols are conventionally written in uppercase (e.g., MC1R) and breed names in title case.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="doc-section" id="results">
+                        <p class="section-eyebrow">Results Pages</p>
+                        <h2>Reading Your Results</h2>
+                        <p>Each search type opens a dedicated results page with several information cards. Here is a breakdown of what each section contains.</p>
+
+                        <h3>SNP Results</h3>
+                        <div class="doc-card">
+                            <p style="font-size:0.85rem; color:#475569; margin:0; line-height:1.7;">
+                                The SNP page shows <strong>Variant Information</strong> (ID, position, mutation type, alleles),
+                                <strong>Allele Frequencies</strong> across breeds, <strong>Phenotype Associations</strong>
+                                (traits linked to this variant), and <strong>Related Genes</strong> that contain or are near the SNP.
+                            </p>
+                        </div>
+
+                        <h3>Gene Results</h3>
+                        <div class="doc-card">
+                            <p style="font-size:0.85rem; color:#475569; margin:0; line-height:1.7;">
+                                The Gene page shows <strong>Gene Information</strong> (symbol, ID, chromosome, protein length),
+                                <strong>Associated SNPs</strong> within the gene with their mutation types and MAF values,
+                                <strong>Breed-Specific Variants</strong> with frequency data, <strong>Gene Statistics</strong>
+                                (known SNPs, publications), and <strong>Related Genes</strong> in the same pathway.
+                            </p>
+                        </div>
+
+                        <h3>Breed Results</h3>
+                        <div class="doc-card">
+                            <p style="font-size:0.85rem; color:#475569; margin:0; line-height:1.7;">
+                                The Breed page shows <strong>Breed Overview</strong> (origin, size, group),
+                                <strong>Top Genetic Markers</strong> characteristic to the breed,
+                                <strong>Health Predispositions</strong> based on marker frequencies, and
+                                <strong>Ancestral Composition</strong> showing genetic similarity to related breeds.
+                            </p>
+                        </div>
+
+                        <h3>Disease Results</h3>
+                        <div class="doc-card">
+                            <p style="font-size:0.85rem; color:#475569; margin:0; line-height:1.7;">
+                                The Disease page shows the <strong>Causative or Associated Genes</strong>,
+                                <strong>Diagnostic Markers</strong> used to determine risk, carrier, or clear status,
+                                <strong>Most Affected Breeds</strong> with prevalence rates, and
+                                <strong>Literature References</strong> linking to published research.
+                            </p>
+                        </div>
+
+                        <div class="callout callout-warn">
+                            <span class="callout-icon">⚠️</span>
+                            <div class="callout-body">
+                                <p class="callout-title">For research and education only</p>
+                                <p class="callout-text">DogDecode is an informational tool. Results should not replace veterinary genetic testing or professional diagnosis. Always consult a licensed veterinarian for health-related decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile -->
+                    <div class="doc-section" id="profile">
+                        <p class="section-eyebrow">Profile</p>
+                        <h2>Your Profile Page</h2>
+                        <p>The Profile page provides a sample view of what an individual dog's genomic report looks like. Navigate to it via the "Profile" link in the top navbar.</p>
+
+                        <h3>Overview Tab</h3>
+                        <p>The Overview tab shows:</p>
+                        <ul class="steps">
+                            <li class="step">
+                                <div class="step-num" style="background:#2563eb;">🧬</div>
+                                <div class="step-body">
+                                    <p class="step-title">Genetic Markers</p>
+                                    <p class="step-desc">Key gene variants identified in the sample, including the observed genotype (e.g., A/A, G/T) and the associated trait.</p>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-num" style="background:#e11d48;">❤️</div>
+                                <div class="step-body">
+                                    <p class="step-title">Health Associations</p>
+                                    <p class="step-desc">Disease risk assessments derived from known markers. Status badges indicate Low Risk, Carrier, or Clear for each condition.</p>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-num" style="background:#d97706;">🐶</div>
+                                <div class="step-body">
+                                    <p class="step-title">Breed Composition</p>
+                                    <p class="step-desc">A percentage breakdown of the dog's genetic ancestry across identified breeds, shown as proportional bars.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- History -->
+                    <div class="doc-section" id="history">
+                        <p class="section-eyebrow">Search History</p>
+                        <h2>Viewing Past Searches</h2>
+                        <p>Every time you run a search from the home page, it is automatically saved to your browser's local storage — no account required.</p>
+
+                        <ul class="steps">
+                            <li class="step">
+                                <div class="step-num">1</div>
+                                <div class="step-body">
+                                    <p class="step-title">Open the Profile page</p>
+                                    <p class="step-desc">Click "Profile" in the navbar or navigate to <code style="font-size:0.82rem;">Profile.html</code>.</p>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-num">2</div>
+                                <div class="step-body">
+                                    <p class="step-title">Click the "Search History" tab</p>
+                                    <p class="step-desc">The tab bar sits just below the profile hero. Click "Search History" to switch from the Overview tab.</p>
+                                </div>
+                            </li>
+                            <li class="step">
+                                <div class="step-num">3</div>
+                                <div class="step-body">
+                                    <p class="step-title">Browse or re-open past searches</p>
+                                    <p class="step-desc">Each history entry shows the search type, query term, and how long ago it was run. Clicking an entry reopens that result page directly.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="callout callout-tip">
+                            <span class="callout-icon">✅</span>
+                            <div class="callout-body">
+                                <p class="callout-title">Clearing history</p>
+                                <p class="callout-text">Use the "Clear All" button in the Search History tab to remove all saved searches. History is stored in your browser only — clearing browser data will also remove it.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="doc-section" id="tips">
+                        <p class="section-eyebrow">Tips & Tricks</p>
+                        <h2>Getting the Most Out of DogDecode</h2>
+
+                        <div class="doc-card">
+                            <ul class="tips-list">
+                                <li class="tip-item">
+                                    <span class="tip-check">✔</span>
+                                    <span><strong>Use official gene symbols</strong> — Enter the standard symbol like <code style="font-size:0.8rem;">MC1R</code> rather than the full name "Melanocortin 1 Receptor" for the most accurate gene results.</span>
+                                </li>
+                                <li class="tip-item">
+                                    <span class="tip-check">✔</span>
+                                    <span><strong>Search multiple types together</strong> — Checking both Gene and Breed at once lets you see how a specific gene behaves across a particular breed in one view.</span>
+                                </li>
+                                <li class="tip-item">
+                                    <span class="tip-check">✔</span>
+                                    <span><strong>Follow "Related Genes" links</strong> — Gene result pages list related genes with pathway similarity scores. These are great starting points for deeper research.</span>
+                                </li>
+                                <li class="tip-item">
+                                    <span class="tip-check">✔</span>
+                                    <span><strong>Click "NCBI Gene" on result pages</strong> — Each gene page has an external link to the NCBI entry for the full reference sequence, expression data, and primary literature.</span>
+                                </li>
+                                <li class="tip-item">
+                                    <span class="tip-check">✔</span>
+                                    <span><strong>Check your search history</strong> — The Profile → Search History tab keeps your last 100 searches as clickable links, so you never have to retype a query.</span>
+                                </li>
+                                <li class="tip-item">
+                                    <span class="tip-check">✔</span>
+                                    <span><strong>Use the back link</strong> — Every result page has a "← Back to Search" link in the top-left that returns you to the home search panel.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h3>Quick Reference</h3>
+                        <div class="doc-card" style="padding:0; overflow:hidden;">
+                            <table class="ref-table">
+                                <thead>
+                                    <tr>
+                                        <th>Search Type</th>
+                                        <th>Format</th>
+                                        <th>Example</th>
+                                        <th>Results Page</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>🔍 SNP</td>
+                                        <td>rs + numbers</td>
+                                        <td><code>rs22232384</code></td>
+                                        <td>SNP Results</td>
+                                    </tr>
+                                    <tr>
+                                        <td>🧬 Gene</td>
+                                        <td>Gene symbol</td>
+                                        <td><code>MC1R</code></td>
+                                        <td>Gene Results</td>
+                                    </tr>
+                                    <tr>
+                                        <td>🐶 Breed</td>
+                                        <td>Breed name</td>
+                                        <td><code>Labrador Retriever</code></td>
+                                        <td>Breed Results</td>
+                                    </tr>
+                                    <tr>
+                                        <td>❤️‍🩹 Disease</td>
+                                        <td>Condition name</td>
+                                        <td><code>Hip Dysplasia</code></td>
+                                        <td>Disease Results</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Highlight active TOC link on scroll
+        var sections = document.querySelectorAll('.doc-section');
+        var tocLinks = document.querySelectorAll('.toc-link');
+
+        function onScroll() {
+            var scrollY = window.scrollY + 80;
+            var current = '';
+            sections.forEach(function(s) {
+                if (s.offsetTop <= scrollY) current = s.id;
+            });
+            tocLinks.forEach(function(a) {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+            });
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
+</body>
+</html>

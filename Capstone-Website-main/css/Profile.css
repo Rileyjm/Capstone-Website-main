@@ -180,3 +180,175 @@
 .view-link:hover, .view-link-red:hover { text-decoration: underline; }
 
 .main-section { padding: 24px 0 48px; }
+
+/* ── Profile Tabs ── */
+.profile-tabs-bar {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 0;
+}
+
+.profile-tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 14px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #64748b;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    margin-bottom: -1px;
+}
+
+.profile-tab:hover { color: #0f172a; }
+
+.profile-tab.active {
+    color: #059669;
+    border-bottom-color: #059669;
+}
+
+/* ── History Panel ── */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.01em;
+}
+
+.history-count {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.btn-clear-history {
+    background: none;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: inherit;
+    color: #64748b;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.btn-clear-history:hover { border-color: #fca5a5; color: #b91c1c; }
+
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.history-item:hover {
+    border-color: #a7f3d0;
+    box-shadow: 0 2px 8px rgba(5,150,105,0.08);
+    color: inherit;
+}
+
+.history-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.badge-snp     { background: #eff6ff; }
+.badge-gene    { background: #f0fdf4; }
+.badge-breed   { background: #fffbeb; }
+.badge-disease { background: #fff1f2; }
+
+.history-info { flex: 1; min-width: 0; }
+
+.history-query {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.history-meta {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.history-type-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.label-snp     { background: #eff6ff; color: #2563eb; }
+.label-gene    { background: #dcfce7; color: #15803d; }
+.label-breed   { background: #fef9c3; color: #a16207; }
+.label-disease { background: #fee2e2; color: #b91c1c; }
+
+.history-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #94a3b8;
+}
+
+.history-empty-icon { font-size: 2.5rem; margin-bottom: 12px; }
+
+.history-empty-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.history-empty-sub {
+    font-size: 0.82rem;
+    margin-bottom: 18px;
+}
+
+.btn-go-search {
+    display: inline-block;
+    background: #059669;
+    color: white;
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.15s;
+}
+
+.btn-go-search:hover { background: #047857; color: white; }
