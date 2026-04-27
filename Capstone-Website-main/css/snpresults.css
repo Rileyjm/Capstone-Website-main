@@ -1,0 +1,200 @@
+/* ── Search Bar ── */
+.search-bar-section {
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 14px 0;
+}
+
+.search-input {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px 0 0 8px;
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    color: #0f172a;
+    background: white;
+}
+
+.search-input:focus { border-color: #93c5fd; }
+
+.filter-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.filter-btn:hover { background: #1d4ed8; }
+
+/* ── Results Header ── */
+.results-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+    letter-spacing: -0.02em;
+}
+
+.results-count {
+    color: #64748b;
+    font-size: 0.82rem;
+    margin-bottom: 0;
+}
+
+/* ── SNP Cards ── */
+.snp-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.snp-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    border-color: #cbd5e1;
+}
+
+.snp-id {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #2563eb;
+    margin-right: 8px;
+}
+
+.badge-missense    { background: #eff6ff; color: #2563eb; font-size: 0.7rem; font-weight: 600; padding: 2px 9px; border-radius: 20px; }
+.badge-regulatory  { background: #f5f3ff; color: #7c3aed; font-size: 0.7rem; font-weight: 600; padding: 2px 9px; border-radius: 20px; }
+.badge-intronic    { background: #f0fdf4; color: #059669; font-size: 0.7rem; font-weight: 600; padding: 2px 9px; border-radius: 20px; }
+
+.snp-position {
+    color: #64748b;
+    font-size: 0.82rem;
+    margin-bottom: 2px;
+}
+
+.snp-gene {
+    font-size: 0.82rem;
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+.gene-link { color: #2563eb; text-decoration: none; font-weight: 500; }
+.gene-link:hover { text-decoration: underline; }
+
+.snp-divider {
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    margin: 10px 0;
+}
+
+.snp-meta-label {
+    color: #94a3b8;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 3px;
+}
+
+.snp-meta-value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.view-details-link { color: #2563eb; text-decoration: none; font-size: 0.82rem; font-weight: 500; }
+.view-details-link:hover { text-decoration: underline; }
+
+/* ── Detail Section ── */
+.detail-section {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 8px;
+}
+
+.detail-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+    letter-spacing: -0.01em;
+}
+
+.detail-subtitle {
+    color: #64748b;
+    font-size: 0.82rem;
+    margin-bottom: 18px;
+}
+
+.info-box {
+    border-radius: 10px;
+    padding: 14px 16px;
+    height: 100%;
+    border: 1px solid transparent;
+}
+
+.info-box-blue   { background: #eff6ff; border-color: #bfdbfe; }
+.info-box-green  { background: #f0fdf4; border-color: #a7f3d0; }
+.info-box-yellow { background: #fffbeb; border-color: #fde68a; }
+
+.info-box-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #475569;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: #475569;
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.gene-val { color: #2563eb; font-weight: 600; }
+
+/* ── Phenotypes ── */
+.associated-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.phenotype-box {
+    background: #f8faff;
+    border: 1px solid #e0e7ff;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.phenotype-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 3px;
+}
+
+.phenotype-desc {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.results-section { padding: 24px 0 48px; }

@@ -1,0 +1,182 @@
+/* ── Hero ── */
+.hero-section {
+    background: linear-gradient(140deg, #0f172a 0%, #1e3a5f 100%);
+    padding: 32px 0;
+}
+
+.dog-icon {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    width: 90px;
+    height: 90px;
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.hero-section h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    letter-spacing: -0.03em;
+    color: white;
+}
+
+.hero-section .meta {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+}
+
+/* ── Cards ── */
+.card-white {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.card-green {
+    background: #f0fdf4;
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-pink {
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-yellow {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+    color: #0f172a;
+}
+
+/* ── Genetic Markers ── */
+.marker-row {
+    padding: 11px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.marker-row:last-of-type { border-bottom: none; }
+
+.marker-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #1e293b;
+    margin: 0;
+}
+
+.marker-desc {
+    color: #94a3b8;
+    font-size: 0.82rem;
+    margin: 1px 0 0 0;
+}
+
+.marker-value {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #059669;
+}
+
+/* ── SNP Summary Stats ── */
+.stat-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 3px;
+    letter-spacing: -0.03em;
+}
+
+.stat-label {
+    color: #64748b;
+    font-size: 0.78rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ── Health Rows ── */
+.health-row {
+    padding: 10px 0;
+    border-bottom: 1px solid #fecdd3;
+}
+
+.health-row:last-of-type { border-bottom: none; }
+
+.health-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1e293b;
+    margin: 0;
+}
+
+.health-based {
+    color: #94a3b8;
+    font-size: 0.78rem;
+    margin: 1px 0 0 0;
+}
+
+.badge-low-risk { background: #dcfce7; color: #16a34a; font-size: 0.7rem; font-weight: 600; padding: 3px 9px; border-radius: 20px; }
+.badge-carrier  { background: #fef9c3; color: #b45309; font-size: 0.7rem; font-weight: 600; padding: 3px 9px; border-radius: 20px; }
+.badge-clear    { background: #f0fdf4; color: #15803d; font-size: 0.7rem; font-weight: 600; padding: 3px 9px; border-radius: 20px; }
+
+/* ── Breed Composition Bars ── */
+.breed-bar-label {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 5px;
+}
+
+.breed-bar {
+    height: 7px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #d97706, #fbbf24);
+    margin-bottom: 12px;
+}
+
+/* ── Data Source ── */
+.ds-row {
+    padding: 6px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.82rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.ds-row:last-child { border-bottom: none; }
+
+/* ── Links ── */
+.view-link     { color: #059669; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+.view-link-red { color: #e11d48; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+.view-link:hover, .view-link-red:hover { text-decoration: underline; }
+
+.main-section { padding: 24px 0 48px; }

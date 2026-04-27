@@ -1,0 +1,341 @@
+/* ── Hero ── */
+.hero-section {
+    background: #fffbeb;
+    padding: 28px 0;
+    border-bottom: 1px solid #fde68a;
+}
+
+.breed-img-placeholder {
+    background: white;
+    border: 1px solid #fde68a;
+    border-radius: 12px;
+    width: 90px;
+    height: 90px;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.breed-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #0f172a;
+}
+
+.badge-popular {
+    background: #fef3c7;
+    color: #b45309;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.breed-origin {
+    color: #64748b;
+    font-size: 0.82rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.breed-description {
+    color: #475569;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    max-width: 580px;
+}
+
+.btn-sample {
+    background: #d97706;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: inherit;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-sample:hover { background: #b45309; }
+
+.btn-export {
+    background: white;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ── Stats Bar ── */
+.stats-bar {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 18px 0;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+}
+
+.stat-number.blue   { color: #2563eb; }
+.stat-number.green  { color: #059669; }
+.stat-number.orange { color: #d97706; }
+.stat-number.red    { color: #e11d48; }
+
+.stat-label {
+    font-size: 0.76rem;
+    color: #94a3b8;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ── Section Cards ── */
+.card-section-green {
+    background: #f0fdf4;
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-section-pink {
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-section {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.section-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #0f172a;
+    margin-bottom: 3px;
+}
+
+.section-subtitle {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin-bottom: 14px;
+}
+
+/* ── Genetic Markers ── */
+.marker-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid #e8f5ee;
+}
+
+.marker-row:last-of-type { border-bottom: none; }
+
+.marker-name {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #1e293b;
+    margin-right: 6px;
+}
+
+.marker-allele {
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.badge-high-impact   { background: #fee2e2; color: #b91c1c; font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+.badge-medium-impact { background: #fef9c3; color: #b45309; font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+.badge-low-impact    { background: #dcfce7; color: #15803d; font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+
+.marker-desc {
+    color: #94a3b8;
+    font-size: 0.78rem;
+    margin: 2px 0 0 0;
+}
+
+.marker-pct {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #059669;
+}
+
+/* ── Health Rows ── */
+.health-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid #fee2e2;
+}
+
+.health-row:last-of-type { border-bottom: none; }
+
+.health-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.health-meta {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.badge-high-risk     { background: #fee2e2; color: #b91c1c; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+.badge-moderate-risk { background: #fef3c7; color: #b45309; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+.badge-low-risk      { background: #dcfce7; color: #15803d; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+
+/* ── Traits ── */
+.traits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.traits-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.traits-box-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.trait-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 4px 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+}
+
+.trait-row:last-child { border-bottom: none; }
+
+/* ── Classification (sidebar) ── */
+.info-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+
+.info-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.energy-bar {
+    height: 6px;
+    background: linear-gradient(to right, #d97706 70%, #e2e8f0 70%);
+    border-radius: 20px;
+    margin-bottom: 4px;
+}
+
+/* ── Similar Breeds ── */
+.similar-breed-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.similar-breed-row:last-of-type { border-bottom: none; }
+
+.similar-breed-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.similar-breed-meta {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.similar-pct {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #d97706;
+}
+
+/* ── Population Bars ── */
+.pop-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    color: #475569;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.pop-bar {
+    height: 7px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #d97706, #fbbf24);
+    margin-bottom: 13px;
+}
+
+.pop-note {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* ── Links ── */
+.view-all-link, .view-health-link {
+    color: #059669;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.view-all-link:hover, .view-health-link:hover { text-decoration: underline; }
+
+.main-section { padding: 24px 0 48px; }

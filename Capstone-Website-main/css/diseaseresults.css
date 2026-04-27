@@ -1,0 +1,257 @@
+/* ── Hero ── */
+.hero-section {
+    background: #fff1f2;
+    padding: 28px 0;
+    border-bottom: 1px solid #fecdd3;
+}
+
+.disease-icon {
+    background: white;
+    border: 1px solid #fecdd3;
+    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.disease-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #0f172a;
+}
+
+.badge-condition {
+    background: #ffe4e6;
+    color: #be123c;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.alt-name {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.description {
+    color: #475569;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    max-width: 580px;
+}
+
+.btn-risk {
+    background: #e11d48;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: inherit;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-risk:hover { background: #be123c; }
+
+.btn-guide {
+    background: white;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ── Stats Bar ── */
+.stats-bar {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 18px 0;
+}
+
+.stat-num-red    { font-size: 1.5rem; font-weight: 800; color: #e11d48; margin-bottom: 2px; letter-spacing: -0.02em; }
+.stat-num-blue   { font-size: 1.5rem; font-weight: 800; color: #2563eb; margin-bottom: 2px; letter-spacing: -0.02em; }
+.stat-num-orange { font-size: 1.5rem; font-weight: 800; color: #d97706; margin-bottom: 2px; letter-spacing: -0.02em; }
+.stat-num-green  { font-size: 1.5rem; font-weight: 800; color: #059669; margin-bottom: 2px; letter-spacing: -0.02em; }
+
+.stat-label {
+    font-size: 0.76rem;
+    color: #94a3b8;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ── Cards ── */
+.card-white {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.card-green {
+    background: #f0fdf4;
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-blue {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-yellow {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+    color: #0f172a;
+}
+
+.card-subtitle {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin-bottom: 14px;
+}
+
+/* ── Gene Boxes ── */
+.gene-box {
+    background: white;
+    border: 1px solid #a7f3d0;
+    border-radius: 8px;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+
+.gene-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #059669;
+    margin-right: 7px;
+}
+
+.gene-meta {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    margin: 4px 0 0 0;
+}
+
+/* ── SNP / Risk Boxes ── */
+.snp-box {
+    background: white;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+
+.snp-id {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #2563eb;
+    margin-right: 7px;
+}
+
+.snp-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+
+.snp-value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.badge-high     { background: #fee2e2; color: #b91c1c; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+.badge-moderate { background: #fef3c7; color: #b45309; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+.badge-low      { background: #dcfce7; color: #15803d; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+
+/* ── Info Labels ── */
+.info-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+
+.info-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+/* ── Breed Rows ── */
+.breed-row {
+    padding: 10px 0;
+    border-bottom: 1px solid #fef3c7;
+}
+
+.breed-row:last-of-type { border-bottom: none; }
+
+.breed-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.breed-meta {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* ── Prevention ── */
+.prevention-item {
+    font-size: 0.875rem;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+/* ── Links ── */
+.view-link-green  { color: #059669; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+.view-link-orange { color: #d97706; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+.view-link-green:hover, .view-link-orange:hover { text-decoration: underline; }
+
+.main-section { padding: 24px 0 48px; }
